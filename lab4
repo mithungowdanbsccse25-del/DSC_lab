@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() {
+    int i, j,a[3][3],b[3][3],r[3][3];    
+    printf("Enter the first elements\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+    printf("Enter the second elements\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            scanf("%d", &b[i][j]);}
+    }
+    for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++){
+        r[i][j]=0;
+        r[i][j]+=a[i][j]+b[i][j];
+        }}
+            printf("The addition of 3x3 is:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("%d ", r[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
