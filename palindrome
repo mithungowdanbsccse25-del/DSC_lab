@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main(){
+     char str[50],s1[50];
+    printf("Enter a string");
+    scanf("%s",&str);
+    strcpy(s1,str);
+    strrev(s1);
+    if(strcmp(str,s1)==0){
+        printf("Is a palindrome");
+    }
+        else{
+        printf("Not a palindrome");
+    }
+    return 0;
+}
